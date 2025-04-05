@@ -1,15 +1,23 @@
-# Multimodal fusion
+# treatment_response/fusion_model.py
+
+import torch
 import torch.nn as nn
+from .imaging_model import ImagingModel
+from .genomics_model import GenomicsModel
 
 class FusionModel(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.img_branch = nn.Linear(128, 64)
-        self.gen_branch = nn.Linear(128, 64)
-        self.fusion = nn.Linear(128, 2)
+    def __init__(self, image_dim=128, genomic_dim=128, hidden_dim=64, num_classes=2):
+        super(FusionModel, self).__init__()
+        self.image_encoder = ImagingModel(output_dim=image_dim)
+        self.genomic_encoder = GenomicsModel(output_dim=genomic_dim)
+        self.classifier = nn.Sequential(
+            nn.Linear(image_dim + genomic_dim, hidden_dim),
+            nn.ReLU(),
+            nn.Linear(hidden_dim, num_classes)
+        )
 
-    def forward(self, img_feat, gen_feat):
-        i = self.img_branch(img_feat)
-        g = self.gen_branch(gen_feat)
-        combined = torch.cat([i, g], dim=1)
-        return self.fusion(combined)
+    def forward(self, image, genomic):
+        image_feat = self.image_encoder(image)
+        genomic_feat = self.genomic_encoder(genomic)
+        combined = torch.cat((image_feat, genomic_feat), dim=1)
+        return self.classifier(combined)
