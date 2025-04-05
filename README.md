@@ -17,7 +17,30 @@
 ---
 ## 📁 Project Structure
 
-immunova/ ├── til_classification/ # TIL CNNs + Grad-CAM │ ├── train.py │ └── ... ├── treatment_response/ # Imaging/genomics/fusion models │ ├── fusion_model.py │ └── ... ├── survival_analysis/ # Transformer survival models │ ├── km_validation.py │ └── ... ├── drug_optimization/ # GNN + RL drug strategies │ └── ... ├── validation/ # Clinical/external dataset validators │ └── ... ├── frontend/ # Web frontend (HTML/CSS/JS) │ └── ... ├── deployment/ # Azure deployment configs │ └── ... ├── tests/ # Unit tests and model tests ├── requirements.txt ├── CONTRIBUTING.md ├── LICENSE └── README.md
+immunova/
+├── til_classification/         # TIL CNNs + Grad-CAM
+│   ├── train.py
+│   └── ...
+├── treatment_response/         # Imaging/genomics/fusion models
+│   ├── fusion_model.py
+│   └── ...
+├── survival_analysis/          # Transformer survival models
+│   ├── km_validation.py
+│   └── ...
+├── drug_optimization/          # GNN + RL drug strategies
+│   └── ...
+├── validation/                 # Clinical/external dataset validators
+│   └── ...
+├── frontend/                   # Web frontend (HTML/CSS/JS)
+│   └── ...
+├── deployment/                 # Azure deployment configs
+│   └── ...
+├── tests/                      # Unit tests and model tests
+├── requirements.txt
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
+
 
 ## 🛠 Quickstart
 
