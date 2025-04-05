@@ -1,22 +1,41 @@
 # 🧬 Immunova
 
-**Immunova** is an open-source framework for multi-modal, AI-powered treatment response prediction and survival modeling in pancreatic cancer. We bring together histopathology, genomics, and clinical data into one modular ecosystem — designed for researchers, data scientists, and clinicians.
+**Immunova** is an open-source platform for multi-modal analysis and treatment modeling in pancreatic cancer. It integrates histopathology, genomics, survival data, and drug-response modeling into one unified, modular framework.
 
 ---
 
-## 🚀 Features
+## 🚀 Quickstart
 
-- 🔬 **TIL Classification** with CNNs (ResNet, EfficientNet)
-- 🧠 **Fusion Networks** combining imaging + genomics
-- 📈 **Survival Prediction** using Transformer + Cox models
-- 💊 **Drug Optimization** via GNNs + RL for combo therapies
-- 📊 **Validation Tools** for KM curves & external datasets
-- 🌐 **Frontend Dashboard** for visualization & deployment
-- ☁️ **Azure Integration** for scalable model serving
+```bash
+# Train a TIL classifier
+python til_classification/train.py
+
+# Run inference on genomics + imaging
+python treatment_response/fusion_model.py
+
+# Validate survival predictions
+python survival_analysis/km_validation.py
+```
 
 ---
+
+## 🧪 Testing
+
+```bash
+pytest
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
+
+---
+
 ## 📁 Project Structure
 
+```
 immunova/
 ├── til_classification/         # TIL CNNs + Grad-CAM
 │   ├── train.py
@@ -40,16 +59,22 @@ immunova/
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
+```
 
+---
 
-## 🛠 Quickstart
+## 📄 License
 
-```bash
-# Train a TIL classifier
-python til_classification/train.py
+This project is licensed under the MIT License.
 
-# Run inference on genomics + imaging
-python treatment_response/fusion_model.py
+---
 
-# Validate survival predictions
-python survival_analysis/km_validation.py
+## 👩‍🔬 Acknowledgements
+
+Built by young researchers and contributors in the fight against pancreatic cancer. Datasets and validation supported by collaborations with leading institutions and clinical data sources.
+
+---
+
+## 💙 Join Us
+
+Let’s push the boundaries of computational oncology — together.
