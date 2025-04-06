@@ -42,7 +42,7 @@ This repository contains a collection of machine learning models for various tas
     └── multimodal_csv/
         └── ex2.csv
 ```
-#The datasets folder hadn't been uploaded since there are bo datasets currently
+#The datasets folder hadn't been uploaded since there are no datasets currently
 ---
 
 ## 📁 Dataset Preparation
