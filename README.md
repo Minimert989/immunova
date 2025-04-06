@@ -14,23 +14,35 @@ This repository contains a collection of machine learning models for various tas
 ├── til_classification/
 │   ├── grad_cam.py
 │   ├── model.py
-│   ├── train.py
+│   └── train.py
 ├── drug_optimization/
 │   ├── gnn_model.py
-│   ├── rl_optimizer.py
+│   └── rl_optimizer.py
 ├── survival_analysis/
 │   ├── km_validation.py
-│   ├── survival_transformer.py
+│   └── survival_transformer.py
 ├── treatment_response/
 │   ├── fusion_model.py
 │   ├── genomics_model.py
-│   ├── imaging_model.py
+│   └── imaging_model.py
 ├── validation/
 │   ├── clinical_validation.py
-│   ├── external_datasets_loader.py
+│   └── external_datasets_loader.py
 └── datasets/
+    ├── TIL/
+    │   └── exampl.jpg
+    ├── Non-TIL/
+    │   └── ex3.jpg
+    ├── graphs/
+    │   └── ex.pt
+    ├── csv/
+    │   └── sample.csv
+    ├── multimodal_images/
+    │   └── ex.jpg
+    └── multimodal_csv/
+        └── ex2.csv
 ```
-
+#The datasets folder hadn't been uploaded since there are bo datasets currently
 ---
 
 ## 📁 Dataset Preparation
