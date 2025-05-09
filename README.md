@@ -8,6 +8,7 @@ This repository contains a collection of machine learning models for various tas
 
 ```
 /immunova/
+
 ├── api.py
 ├── model.py
 ├── requirements.txt
@@ -28,6 +29,9 @@ This repository contains a collection of machine learning models for various tas
 ├── validation/
 │   ├── clinical_validation.py
 │   └── external_datasets_loader.py
+|── preprocessing/
+    |── WSIs/
+        |── WSIprocessor.py 
 └── datasets/
     ├── TIL/
     │   └── exampl.jpg
